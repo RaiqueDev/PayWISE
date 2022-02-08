@@ -13,6 +13,9 @@ import "./App.css";
 import LogoPayWISE from "./img/LogoPayWISE.svg";
 import Hero from "./img/hero.svg";
 
+import Card01 from "./img/CardVisa.svg";
+import Card02 from "./img/CardVisa02.svg";
+
 export default function App() {
   return (
     <>
@@ -186,12 +189,12 @@ export default function App() {
           h="100vh"
           display="flex"
           justifyContent="center"
-          alignItems="center"
+          alignItems="flex-end"
         >
           <Center
-            w="90%"
+            w="100%"
             maxW={1697}
-            h="90%"
+            h="89%"
             display="flex"
             justifyContent="center"
             alignItems="center"
@@ -201,8 +204,8 @@ export default function App() {
                 w="100%"
                 h="100%"
                 display="flex"
-                alignItems="center"
                 justifyContent="center"
+                ml={128}
               >
                 <Box w="100%" h="90%" maxH={474}>
                   <Grid
@@ -224,6 +227,7 @@ export default function App() {
                       </Text>
                       <Box w="100%" h="5px" bg="#fff" />
                     </GridItem>
+
                     <GridItem w="100%" h="108px">
                       <Grid
                         w="100%"
@@ -320,19 +324,20 @@ export default function App() {
                       </Grid>
                     </GridItem>
 
-                    <GridItem 
-                      w="100%" 
-                      h="80px" 
+                    <GridItem
+                      w="100%"
+                      h="80px"
                       display="flex"
-                      alignItems="center">
-
+                      alignItems="center"
+                    >
                       <Button
                         w="200px"
                         h="60px"
                         borderRadius={10}
                         border="none"
                         bg="#DAD873"
-                        color="#309975">
+                        color="#309975"
+                      >
                         Download Now
                       </Button>
                     </GridItem>
@@ -340,18 +345,393 @@ export default function App() {
                 </Box>
               </GridItem>
 
-              <GridItem 
-                bgImage={Hero} 
-                bgSize="800px" 
-                bgRepeat="no-repeat" 
-                bgPos="right" 
-                w="100%" 
-                h="100%" />
-
+              <GridItem
+                w="100%"
+                h="100%"
+                display="flex"
+                justifyContent="flex-end"
+                alignItems="flex-end"
+              >
+                <Box
+                  w="100%"
+                  h="100%"
+                  bgImage={Hero}
+                  bgRepeat="no-repeat"
+                  bgPos="center"
+                />
+              </GridItem>
             </Grid>
           </Center>
         </Container>
       </header>
+      <main>
+        <Container
+          w="100%"
+          h="150vh"
+          bg="#fff"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Center
+            w="90%"
+            maxW={1697}
+            h="80%"
+            color="white"
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+            flexDir="column"
+          >
+            <Box
+              w="100%"
+              h="140px"
+              color="white"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Box
+                w="90%"
+                maxW="583px"
+                h="100%"
+                display="flex"
+                justifyContent="space-between"
+                textAlign="center"
+                flexDir="column"
+              >
+                <Text
+                  fontStyle="normal"
+                  fontWeight="bold"
+                  fontSize="38px"
+                  lineHeight="72px"
+                  color="#309975"
+                >
+                  One Mission. Two Cards
+                </Text>
+
+                <Text
+                  fontStyle="normal"
+                  fontWeight="normal"
+                  fontSize="17px"
+                  lineHeight="30.04px"
+                  color="#575757"
+                >
+                  We are providing our clients two cards for their one
+                  <br />
+                  mission and finance
+                </Text>
+              </Box>
+            </Box>
+
+            <Grid
+              w="100%"
+              h="90%"
+              maxH={984}
+              templateColumns="repeat(2, 1fr)"
+              gap={6}
+            >
+              <GridItem
+                w="100%"
+                h="100%"
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <Box
+                  w="90%"
+                  maxW={450}
+                  h="100%"
+                  color="white"
+                  borderRadius={20}
+                  bg="rgba(239, 238, 180, 0.2)"
+                  boxShadow="0px 5px 10px rgba(0, 0, 0, 0.15)"
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+                >
+                  <Box 
+                    w="90%" 
+                    maxW={434} 
+                    h="90%" 
+                    maxH={854} >
+                    
+                    <Grid
+                      w="100%"
+                      h="100%"
+                      templateColumns="repeat(1, 1fr)"
+                      gap={6}
+                    >
+                      <GridItem
+                        w="100%"
+                        h="60px"
+                        display="flex"
+                        alignItems="center"
+                      >
+                        <Button
+                          w="90%"
+                          maxW="150px"
+                          h="100%"
+                          borderRadius={10}
+                          bg="#DAD873"
+                          border="none"
+                          display="flex"
+                          justifyContent="center"
+                          alignItems="center"
+                        >
+                          Petal 1
+                        </Button>
+                      </GridItem>
+
+                      <GridItem
+                        w="100%"
+                        h="108px"
+                        display="flex"
+                        alignItems="center"
+                      >
+                        <Text
+                          fontStyle="normal"
+                          fontWeight="500"
+                          fontSize="36px"
+                          lineHeight="54px"
+                          color="#DAD873"
+                        >
+                          Expanding Access
+                          <br />
+                          Through Technology.
+                        </Text>
+                      </GridItem>
+
+                      <GridItem
+                        w="100%"
+                        h="198px"
+                        display="flex"
+                        justifyContent="space-between"
+                        flexDir="column"
+                      >
+                        <Text
+                          fontStyle="normal"
+                          fontWeight="normal"
+                          fontSize="14px"
+                          lineHeight="27px"
+                          color="#575757"
+                        >
+                          No annual fee (Late and returned less apply )
+                        </Text>
+                        <Text
+                          fontStyle="normal"
+                          fontWeight="normal"
+                          fontSize="14px"
+                          lineHeight="27px"
+                          color="#575757"
+                        >
+                          $500 - $5,000 limits
+                        </Text>
+                        <Text
+                          fontStyle="normal"
+                          fontWeight="normal"
+                          fontSize="14px"
+                          lineHeight="27px"
+                          color="#575757"
+                        >
+                          APRs 19.99% - 29.49%
+                        </Text>
+                        <Text
+                          fontStyle="normal"
+                          fontWeight="normal"
+                          fontSize="14px"
+                          lineHeight="27px"
+                          color="#575757"
+                        >
+                          2% -10% cash back at select merchants
+                        </Text>
+                      </GridItem>
+
+                      <GridItem 
+                        w="100%" 
+                        h="60px" >
+                        <Button
+                          w="90%"
+                          maxW="150px"
+                          h="100%"
+                          borderRadius={10}
+                          bg="#F8BF88"
+                          border="none"
+                          display="flex"
+                          justifyContent="center"
+                          alignItems="center"
+                        >
+                          Learn More
+                        </Button>
+                      </GridItem>
+
+                      <GridItem
+                        w="100%"
+                        h="205px"
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        bgImage={Card01}
+                        bgRepeat="no-repeat"
+                        bgPos="left"
+                      />
+                    </Grid>
+                  </Box>
+                </Box>
+              </GridItem>
+
+              <GridItem
+                w="100%"
+                h="100%"
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <Box
+                  w="90%"
+                  maxW={450}
+                  h="100%"
+                  color="white"
+                  borderRadius={20}
+                  bg="rgba(239, 238, 180, 0.2)"
+                  boxShadow="0px 5px 10px rgba(0, 0, 0, 0.15)"
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+                >
+                  <Box 
+                    w="90%" 
+                    maxW={434} 
+                    h="90%" 
+                    maxH={854} >
+                    
+                    <Grid
+                      w="100%"
+                      h="100%"
+                      templateColumns="repeat(1, 1fr)"
+                      gap={6}
+                    >
+                      <GridItem
+                        w="100%"
+                        h="60px"
+                        display="flex"
+                        alignItems="center"
+                      >
+                        <Button
+                          w="90%"
+                          maxW="150px"
+                          h="100%"
+                          borderRadius={10}
+                          bg="#FFCDC2"
+                          border="none"
+                          display="flex"
+                          justifyContent="center"
+                          alignItems="center"
+                        >
+                          Petal 1
+                        </Button>
+                      </GridItem>
+
+                      <GridItem
+                        w="100%"
+                        h="108px"
+                        display="flex"
+                        alignItems="center"
+                      >
+                        <Text
+                          fontStyle="normal"
+                          fontWeight="500"
+                          fontSize="36px"
+                          lineHeight="54px"
+                          color="#DAD873"
+                        >
+                          Expanding Access
+                          <br />
+                          Through Technology.
+                        </Text>
+                      </GridItem>
+
+                      <GridItem
+                        w="100%"
+                        h="198px"
+                        display="flex"
+                        justifyContent="space-between"
+                        flexDir="column"
+                      >
+                        <Text
+                          fontStyle="normal"
+                          fontWeight="normal"
+                          fontSize="14px"
+                          lineHeight="27px"
+                          color="#575757"
+                        >
+                          No annual fee (Late and returned less apply )
+                        </Text>
+                        <Text
+                          fontStyle="normal"
+                          fontWeight="normal"
+                          fontSize="14px"
+                          lineHeight="27px"
+                          color="#575757"
+                        >
+                          $500 - $5,000 limits
+                        </Text>
+                        <Text
+                          fontStyle="normal"
+                          fontWeight="normal"
+                          fontSize="14px"
+                          lineHeight="27px"
+                          color="#575757"
+                        >
+                          APRs 19.99% - 29.49%
+                        </Text>
+                        <Text
+                          fontStyle="normal"
+                          fontWeight="normal"
+                          fontSize="14px"
+                          lineHeight="27px"
+                          color="#575757"
+                        >
+                          2% -10% cash back at select merchants
+                        </Text>
+                      </GridItem>
+
+                      <GridItem 
+                        w="100%" 
+                        h="60px" >
+                        <Button
+                          w="90%"
+                          maxW="150px"
+                          h="100%"
+                          borderRadius={10}
+                          bg="#F8BF88"
+                          border="none"
+                          display="flex"
+                          justifyContent="center"
+                          alignItems="center"
+                        >
+                          Learn More
+                        </Button>
+                      </GridItem>
+
+                      <GridItem
+                        w="100%"
+                        h="205px"
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        bgImage={Card02}
+                        bgRepeat="no-repeat"
+                        bgPos="left"
+                      />
+                    </Grid>
+                  </Box>
+                </Box>
+              </GridItem>
+            </Grid>
+          </Center>
+        </Container>
+      </main>
     </>
   );
 }
